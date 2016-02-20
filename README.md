@@ -6,7 +6,7 @@
 [![DevDependency Status][daviddm-dev-image]][daviddm-dev-url]
 [![License][license-image]][license-url]
 
-Notify and Respond Count Up/Down images from Hatena Counting.
+Notify and Respond Count Up/Down images from [Hatena Counting](http://counting.hatelabo.jp/).
 
 :clock2: Support Scheduled notifications.
 
