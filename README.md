@@ -8,6 +8,12 @@
 
 Notify and Respond Count Up/Down images from Hatena Counting.
 
+:clock2: Support Scheduled notifications.
+
+## Demo
+
+![](https://i.gyazo.com/17581bce0c82fc146f23f4d99f7fd916.png)
+
 ## Installation
 
 ```
@@ -78,7 +84,7 @@ hubot counting periods - List configured periods
 ## Configurations
 
 ```
-HUBOT_HATENA_COUNTING_GYAZO_TOKEN - Gyazo API Token
+HUBOT_HATENA_COUNTING_GYAZO_TOKEN - Gyazo API Token (requirement)
 HUBOT_HATENA_COUNTING_COUNTDOWN_PERIODS - Notification periods for count down (ex. 0d,1d,2d,3d,4d,5d,10d,*/50d)
 HUBOT_HATENA_COUNTING_COUNTUP_PERIODS - Notification periods for count up (ex. 100d,500d,*/1000d,*/1y)
 HUBOT_HATENA_COUNTING_SCHEDULE - Notification schedule (ex. '0 9 * * *')
@@ -91,6 +97,46 @@ HUBOT_HATENA_COUNTING_MESSAGE_NO_PERIODS - Message of no periods
 
 Greatly inspired from [this article](http://blog.8arrow.org/entry/2016/01/13/183349).
 
+## Tips
+
+### Garbled characters (文字化け)
+
+Sometimes, generated images includes garbled characters.
+
+You may fix this problem putting `.fonts` directory and font files into your Hubot repository.
+More details, see [this article](http://d.hatena.ne.jp/osyo-manga/20130626/1372210417).
+
+### Scheduled notification
+
+You can automate to notify images on specific day.
+you need to set following Configurations.
+
+```
+HUBOT_HATENA_COUNTING_COUNTDOWN_PERIODS='0d,1d,2d,3d,4d,5d,10d,*/50d'
+HUBOT_HATENA_COUNTING_COUNTUP_PERIODS='100d,500d,*/1000d,*/1y'
+HUBOT_HATENA_COUNTING_SCHEDULE='0 9 * * *'
+HUBOT_HATENA_COUNTING_ROOM='<foo>@conference.<bar>.xmpp.slack.com'
+```
+
+This means are...
+
+- Notify every 9 o'clock if there are target counters.
+- Notify to room (`<foo>@conference.<bar>.xmpp.slack.com`).
+- target counters are decided following conditions.
+  - count down: that day, prev day, 2-5 days before, 10 days before, every 50 days
+  - count up: 100 days, 500 days, every 1000 days, every 1 year
+
+### Alias
+
+[hubot-alias](https://github.com/dtaniwaki/hubot-alias) is useful scripts if you want to replace command (ex. `hubot counting` to `hubot 記念日`).
+
+```
+User> hubot alias 記念日=counting
+
+User> hubot 記念日
+Hubot>
+https://i.gyazo.com/zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.png
+```
 
 [npm-url]: https://www.npmjs.com/package/@moqada/hubot-hatena-counting
 [npm-image]: https://img.shields.io/npm/v/hubot-hatena-counting.svg?style=flat-square
