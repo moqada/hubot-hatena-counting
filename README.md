@@ -93,10 +93,6 @@ HUBOT_HATENA_COUNTING_MESSAGE_NO_COUNTERS - Message of no counters
 HUBOT_HATENA_COUNTING_MESSAGE_NO_PERIODS - Message of no periods
 ```
 
-## Etc
-
-Greatly inspired from [this article](http://blog.8arrow.org/entry/2016/01/13/183349).
-
 ## Tips
 
 ### Garbled characters (文字化け)
@@ -137,6 +133,11 @@ User> hubot 記念日
 Hubot>
 https://i.gyazo.com/zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.png
 ```
+
+## Related
+
+Greatly inspired from [this article](http://blog.8arrow.org/entry/2016/01/13/183349).
+
 
 [npm-url]: https://www.npmjs.com/package/@moqada/hubot-hatena-counting
 [npm-image]: https://img.shields.io/npm/v/hubot-hatena-counting.svg?style=flat-square
