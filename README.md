@@ -46,11 +46,11 @@ User> hubot counting delete http://counting.hatelabo.jp/count/xxxxxx
 Hubot>
 Deleted: http://counting.hatelabo.jp/count/xxxxxx
 
-User> hubot counting add http://counting.hatelabo.jp/count/169610
-Hubot> Added: http://counting.hatelabo.jp/count/169610
+User> hubot counting add http://counting.hatelabo.jp/count/xxxxxx
+Hubot> Added: http://counting.hatelabo.jp/count/xxxxxx
 
 User> hubot counting list
-Hubot> http://counting.hatelabo.jp/count/169610
+Hubot> http://counting.hatelabo.jp/count/xxxxxx
 
 User> hubot counting periods
 Hubot>
