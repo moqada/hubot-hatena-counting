@@ -140,7 +140,7 @@ Greatly inspired from [this article](http://blog.8arrow.org/entry/2016/01/13/183
 
 
 [npm-url]: https://www.npmjs.com/package/@moqada/hubot-hatena-counting
-[npm-image]: https://img.shields.io/npm/v/hubot-hatena-counting.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/@moqada/hubot-hatena-counting.svg?style=flat-square
 [travis-url]: https://travis-ci.org/moqada/hubot-hatena-counting
 [travis-image]: https://img.shields.io/travis/moqada/hubot-hatena-counting.svg?style=flat-square
 [daviddm-url]: https://david-dm.org/moqada/hubot-hatena-counting
