@@ -145,6 +145,8 @@ module.exports = (robot) ->
 
 
   isTargetDay = (info) ->
+    if info.days is null
+      return false
     method = if info.type is 'up' then 'subtract' else 'add'
     now = moment().startOf('d').toDate()
     date = moment(now)[method](info.days, 'd')
@@ -169,9 +171,10 @@ getInfo = (url) ->
       matches = /(\d+)/.exec content
       days = parseInt matches and matches[1], 10
       if Number.isNaN days
-        return reject(days)
-      type = if content.indexOf('日目') >= 0 then 'up' else 'down'
-      resolve {days, type}
+        resolve {days: null, type: 'down'}
+      else
+        type = if content.indexOf('日目') >= 0 then 'up' else 'down'
+        resolve {days, type}
 
 
 getImageUrl = (url) ->
