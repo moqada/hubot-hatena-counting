@@ -111,11 +111,12 @@ module.exports = (robot) ->
 
 
   deleteCounter = (url) ->
-    memories = getCounters()
+    memories = [].concat getCounters()
     idx = memories.indexOf url
     if idx < 0
       return false
-    robot.brain.set STORE_KEY, memories.splice idx, 1
+    memories.splice idx, 1
+    robot.brain.set STORE_KEY, memories
     return true
 
 
