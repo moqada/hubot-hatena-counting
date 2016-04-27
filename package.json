@@ -1,7 +1,7 @@
 {
   "name": "@moqada/hubot-hatena-counting",
   "description": "Notify and Respond Count Up/Down images from Hatena Counting.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "moqada <moqada@gmail.com>",
   "bugs": {
     "url": "https://github.com/moqada/hubot-hatena-counting/issues"
