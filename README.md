@@ -1,5 +1,7 @@
 # hubot-hatena-counting
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/moqada/hubot-hatena-counting.svg)](https://greenkeeper.io/)
+
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
