@@ -7,7 +7,7 @@
     "url": "https://github.com/moqada/hubot-hatena-counting/issues"
   },
   "dependencies": {
-    "cheerio": "^0.22.0",
+    "cheerio": "^1.0.0-rc.2",
     "gyazo-api": "^0.3.0",
     "moment": "^2.11.2",
     "node-schedule": "^1.0.0",
