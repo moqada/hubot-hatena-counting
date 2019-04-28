@@ -11,7 +11,7 @@
     "gyazo-api": "^0.3.0",
     "moment": "^2.11.2",
     "node-schedule": "^1.0.0",
-    "superagent": "^3.0.0",
+    "superagent": "^5.0.4",
     "webshot": "^0.18.0"
   },
   "devDependencies": {
